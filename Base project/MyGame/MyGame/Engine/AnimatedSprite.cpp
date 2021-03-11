@@ -13,6 +13,7 @@ AnimatedSprite::AnimatedSprite(sf::Vector2f position, int msPerFrame) :
 // Sets the spritesheet texture we will use for animation frames.
 void AnimatedSprite::setTexture(sf::Texture &texture)
 {
+	sprite_.setTexture(GAME.getTexture("Resources/explosion-spritesheet.png"));
 	sprite_.setTexture(texture);
 }
 
